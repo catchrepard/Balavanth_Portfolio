@@ -1,0 +1,87 @@
+#logoimage{
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+#navbardiv{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+    -webkit-text-fill-color: hsl(0, 100%, 100%);
+}
+
+.navbarelements{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+    width: 100%;
+    height: auto;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    
+}
+
+.navbarelements:hover{
+    -webkit-text-fill-color: rgb(221, 221, 221);
+}
+
+
+#nameelement{
+    
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 100px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    
+}
+
+
+#description{
+    
+    font-family: monospace;
+    font-size: 50px;
+    float: left;
+    margin-left: 100px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+
+}
+
+
+#contactbtn{
+    margin-left: 100px;
+    font-family: monospace;
+    padding: 10px;
+    border-radius: 45px;
+    font-size: 20px;
+    transition: background-color 0.25s;
+    
+    cursor: pointer;
+}
+
+#contactbtn:hover{
+    background-color: rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+
+}
+
+
+#myimage{
+    float: right;
+    margin-bottom: 100px;
+}
+
+
+
+p{
+    font-family: sans-serif;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    padding: 20px;
+   
+}
+
