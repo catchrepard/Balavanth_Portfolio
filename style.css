@@ -1,87 +1,132 @@
-#logoimage{
-    margin-left: 100px;
-    margin-top: 50px;
-    padding-bottom: 10px;
-    height: 50px;
-    border-radius: 100px;
-    background-color: rgb(0, 0, 0);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e7ff; /* Light purple */
+    color: #4b0082; /* Dark purple */
+    margin: 0;
+    padding: 0;
 }
 
-#navbardiv{
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding-bottom: 150px;
-    -webkit-text-fill-color: hsl(0, 100%, 100%);
-}
-
-.navbarelements{
-    margin-left: 50px;
-    margin-right: 50px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: monospace;
-    width: 100%;
-    height: auto;
-    -webkit-text-fill-color: rgb(255, 255, 255);
-    
-}
-
-.navbarelements:hover{
-    -webkit-text-fill-color: rgb(221, 221, 221);
-}
-
-
-#nameelement{
-    
-    font-family: monospace;
-    font-size: 20px;
-    margin-left: 100px;
-    -webkit-text-fill-color: rgb(255, 255, 255);
-    
-}
-
-
-#description{
-    
-    font-family: monospace;
-    font-size: 50px;
-    float: left;
-    margin-left: 100px;
-    -webkit-text-fill-color: rgb(255, 255, 255);
-
-}
-
-
-#contactbtn{
-    margin-left: 100px;
-    font-family: monospace;
-    padding: 10px;
-    border-radius: 45px;
-    font-size: 20px;
-    transition: background-color 0.25s;
-    
-    cursor: pointer;
-}
-
-#contactbtn:hover{
-    background-color: rgb(0, 0, 0);
-    -webkit-text-fill-color: rgb(255, 255, 255);
-
-}
-
-
-#myimage{
-    float: right;
-    margin-bottom: 100px;
-}
-
-
-
-p{
-    font-family: sans-serif;
-    -webkit-text-fill-color: rgb(255, 255, 255);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-   
 }
 
+h1 {
+    color: #800080; /* Purple */
+}
+
+.content {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.proposal-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.proposal-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button#loveButton {
+    background-color: #ff69b4; /* Pink */
+    color: white;
+}
+
+button#dontKnowButton {
+    background-color: #800080; /* Purple */
+    color: white;
+    transition: transform 0.3s ease; /* Added transition */
+}
+
+button#dontKnowButton:hover {
+    transform: translateX(calc(-50% + (100vw - 100%) * 0.5)) translateY(calc(-50% + (100vh - 100%) * 0.5)); /* Random movement */
+}
+
+.photo-paragraph {
+    text-align: center;
+}
+
+/* Add this CSS for the photo popup */
+#photoPopup {
+    display: none; /* Initially hide the photo popup */
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#photoPopup img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close:hover {
+    color: #000;
+}
+
+#photoButton{
+    background-color: #ff69b4; /* Pink */
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: #4b0082;
+
+}
+
+/* Add this CSS for the custom popup */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: #888;
+}
+
+.popup-close:hover {
+    color: #000;
+}
